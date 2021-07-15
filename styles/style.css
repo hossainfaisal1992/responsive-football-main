@@ -12,9 +12,17 @@ a{
     color: white;
     
 }
+
 p{
     font-weight: 400;
 
+}
+header{
+    
+    background-color: #d1cfeb;
+    position: relative;
+    padding: 42px 120px 0 156px;
+    
 }
  .container{
     display: flex;
@@ -22,12 +30,10 @@ p{
     align-items: center;
     margin-top: 67px;
     padding-bottom: 56px;
+
+    
 }  
-header{
-    background-color: #d1cfeb;
-    position: relative;
-    padding: 42px 120px 0 156px;
-}
+
 .login {
 position: absolute;
 width: 123px;
@@ -45,7 +51,11 @@ text-align: center;
 .image{
     width: 556px;
     height: 438px;
+    transition: width 3s linear;
     
+}
+.image:hover{
+    width: 500px;
 }
 .top-text{
     width: 485px;
@@ -123,6 +133,51 @@ Media Queries
 @media only screen and (max-width:688px){
     header{
         background-color: red;
+        width: 100%;
+        padding: 42px 0 0 0;
     }
+    .container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    .top-text{
+        width: 100%;
+        
+    }
+    .top-text h1{
+        padding: 0 5%;
+        font-size: 36px;
+
+    }
+    .link-button{
+        margin-left: 5%;
+    }
+    .image{
+        width: 100%;
+        height: auto;
+    }
+    .image img{
+        width: 90%;
+        height: auto;
+        padding: 0 5%;
+        margin-top: 50px;
+    }
+    .image:hover{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: 1fr;
+        padding:0 5% ;
+    }
+  
+    .footer-container{
+         width: 100%;
+     }
+     .footer-container img{
+         width: 100%;
+         padding: 0 5%;
+     }
 }
 
