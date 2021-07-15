@@ -1,3 +1,128 @@
-h1{
-    background-color:red;
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+
 }
+/* basic setup and utilities  */
+a{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    
+}
+p{
+    font-weight: 400;
+
+}
+ .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 67px;
+    padding-bottom: 56px;
+}  
+header{
+    background-color: #d1cfeb;
+    position: relative;
+    padding: 42px 120px 0 156px;
+}
+.login {
+position: absolute;
+width: 123px;
+top: 50px;
+right: 70px;
+text-align: center;
+
+
+}
+.login a{
+    background-color:#E02C6D ;
+    padding: 10px 24px;
+}
+
+.image{
+    width: 556px;
+    height: 438px;
+    
+}
+.top-text{
+    width: 485px;
+}
+.top-text h1{
+    font-size: 64px;
+}
+.link-button
+{
+width: 168px;
+text-align: center;
+background-color: #E02C6D;
+padding: 10px 24px ;
+
+
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,330px);
+    grid-column-gap:30px;
+    grid-row-gap:27px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.players .article-item {
+box-shadow:0 0 40px rgba(0,0,0,0.15) ;
+padding: 15px;
+}
+.players .article-item img{
+ width: 300px;
+ height: 256px;
+}
+.players .article-item h2{
+    font-size: 28px;
+    color: #18191F;
+    margin-top: 16px;
+}
+.players .article-item p{
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-top: 10px;
+}
+/* footer section */
+.footer-container{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin:156px 0 65px 0;
+}
+.footer-container img{
+    width: 484px;
+    height: auto;
+}
+.icon-section a{
+color: #969BAB;
+background-color: #E7E7E8;
+align-self: center;
+text-align: center;
+border-radius: 50%;
+padding: 5px 0;
+}
+.icon-section a i{
+    width: 32px;
+    height: 32px;
+
+    
+   
+}
+/* ----------------
+Media Queries
+--------------- */
+/* mobile queries */
+@media only screen and (max-width:688px){
+    header{
+        background-color: red;
+    }
+}
+
